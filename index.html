@@ -11,7 +11,7 @@
 
 
 
-<button data-eyezon-put-in-cart data-eyezon="606cd294e16831576e730981" style="background-color: #ff2d55; color: #FFFFFF; border-color: #FFFFFF">Посмотреть вживую</button>
+<button data-eyezon="606cd294e16831576e730981" data-eyezon-put-in-cart style="background-color: #ff2d55; color: #FFFFFF; border-color: #FFFFFF">Посмотреть вживую</button>
 
 
 
@@ -39,7 +39,7 @@ region: 'ru-1'
 
 eyeZon('on', 'PUT_IN_CART_FROM_WIDGET', function(data) {
     // use data.target to add the product to cart
-    handlePutProductInCart(data.target, 1);  
+   console.log('«' + data.target + '» has been put in cart in PUT_IN_CART_FROM_WIDGET handler');
 });
 
 </script>
