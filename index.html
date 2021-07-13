@@ -11,12 +11,48 @@
 
 
 
-<button data-eyezon="" data-eyezon-title="Chat title for test target" data-eyezon-target="SKU-1" data-eyezon-put-in-cart >Посмотреть вживую</button>
+<button data-eyezon="602a6f90f36d5e29f9c7350b" data-eyezon-title="Chat title for test target" data-eyezon-target="SKU-1" data-eyezon-put-in-cart >Посмотреть вживую</button>
+
 
 
 <script>
+(function (w,d,s,o,f,js,fjs) {
+w[o] = w[o] || function () { (w[o].q = w[o].q || []).push(arguments) };
+js = d.createElement(s); fjs = d.getElementsByTagName(s)[0];
+[js.id](http://js.id/) = o; js.src = f; js.async = true; fjs.parentNode.insertBefore(js, fjs);
+}(window, document, 'script', 'eyeZon', 'https://storage.googleapis.com/eyezonscriptv2/static/js/eyezonwidget.js'));
+const searchParams = new URL(window.location.href).searchParams;
+window.eyezon_WebViewLogging = true;
+window.eyezon_WebViewHideNotificationUI = true;
 
-(function(w, d, s, o, f, js, fjs) {
+eyeZon('init', {
+    businessId: searchParams.get('600024822c60354fa1628efc'),
+    region: 'ru-1',
+    unclosable: true
+});
+
+if (searchParams.get('name') !== null) {
+    eyeZon('setDefaultClientField', 'name', searchParams.get('name'));
+}
+if (searchParams.get('phone') !== null) {
+    eyeZon('setDefaultClientField', 'phone', searchParams.get('phone'));
+}
+if (searchParams.get('email') !== null) {
+    eyeZon('setDefaultClientField', 'email', searchParams.get('email'));
+}
+if (searchParams.get('clientId')) {
+    eyeZon('setAnalyticsParam', 'clientId', searchParams.get('clientId'));
+}
+if (searchParams.get('region')) {
+    eyeZon('setAnalyticsParam', 'region', searchParams.get('region'));
+}
+</script>
+```
+
+
+<!-- (function(w, d, s, o, f, js, fjs) {
+<script>
+
 
 w[o] = w[o] || function () { (w[o].q = w[o].q || []).push(arguments) };
 
@@ -43,5 +79,8 @@ eyeZon('on', 'PUT_IN_CART_FROM_WIDGET', function(data) {
 });
 
 </script>
+-->
+
+
   </body>
 </html>
