@@ -32,11 +32,10 @@ eyeZon('init', {
 
 businessId: '6218dd27db9a30520ac435a8',
 //600024822c60354fa1628efc
-region: 'sandbox',
+region: 'sandbox'
 //streamingBackend:"wss://wssru2.eyezon.online/",
 //recordsUrl:"https://recordsru2.eyezon.online/"
-secondRoutingAfterSeconds: 20,
-resetRoutingAfterSeconds: 40
+
 
 });
 eyeZon('on', 'PUT_IN_CART_FROM_WIDGET', function(data) {
@@ -44,7 +43,7 @@ eyeZon('on', 'PUT_IN_CART_FROM_WIDGET', function(data) {
         console.log('«' + data.target + '» has been put in cart in PUT_IN_CART_FROM_WIDGET handler');
 });
 
-eyeZon("setAnalyticsParam", "clientId", "330979853.1602764366");
+//eyeZon("setAnalyticsParam", "clientId", "330979853.1602764366");
 eyeZon("setAnalyticsParam", "region", "1");
 </script>
 
