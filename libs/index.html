@@ -39,7 +39,10 @@ region: 'ru-1',
 
 
 });
-eyeZon("on","BUTTON_CLICKED",function(a){document.getElementsByClassName("gavno");dataLayer.push({event:"EYEZON-BUTTON_CLICKED"})});
+eyeZon("on","BUTTON_CLICKED",function(a){
+  document.getElementsByClassName(".gavno");
+  dataLayer.push({event:"EYEZON-BUTTON_CLICKED"});  
+});
 
 eyeZon('on', 'PUT_IN_CART_FROM_WIDGET', function(data) {
         // use data.target to add the product to cart
