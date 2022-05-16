@@ -11,7 +11,7 @@
 
 
 <!--602a6f90f36d5e29f9c7350b-->
- <button data-eyezon="627631893de111cdf1f57369" data-eyezon-target="Test3" data-eyezon-title="Chat title for test target" data-eyezon-put-in-cart 
+ <button class="gavno" data-eyezon="627631893de111cdf1f57369" data-eyezon-target="Test3" data-eyezon-title="Chat title for test target" data-eyezon-put-in-cart 
 data-eyezon-shop-ids="['shop1', 'shop2']">Посмотреть вживую</button>
 <!--data-eyezon-title="Chat title for test target" data-eyezon-target="SKU-1" data-eyezon-put-in-cart  -->
 
@@ -39,7 +39,7 @@ region: 'ru-1',
 
 
 });
-//eyeZon("on","BUTTON_CLICKED",function(a){document.getElementsByClassName("webchatStartButtonContainer")[0].style.zIndex="2222";dataLayer.push({event:"EYEZON-BUTTON_CLICKED"})});
+eyeZon("on","BUTTON_CLICKED",function(a){document.getElementsByClassName("gavno")[0].style.zIndex="2222";dataLayer.push({event:"EYEZON-BUTTON_CLICKED"})});
 
 eyeZon('on', 'PUT_IN_CART_FROM_WIDGET', function(data) {
         // use data.target to add the product to cart
