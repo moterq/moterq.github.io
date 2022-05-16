@@ -40,6 +40,7 @@ region: 'ru-1',
 
 });
 eyeZon("on","BUTTON_CLICKED",function(data){
+  dataLayer.push({event:"EYEZON-BUTTON_CLICKED"});
   console.log("GAGAGA");  
 });
 
